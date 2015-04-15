@@ -46,6 +46,10 @@
                     history.replaceState({}, '', '#');
                 }
             });
+
+            $('.schema-toggle').click(function(){
+                $(this).parent().next('div.schema').slideToggle();
+            });
         });
     </script>
 
@@ -156,6 +160,10 @@
         }
         .list-group-item:hover {
             background-color: #f5f5f5;
+        }
+
+        div.schema {
+            display: none;
         }
     </style>
 </head>

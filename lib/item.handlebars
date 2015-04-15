@@ -30,8 +30,10 @@
     {{md description}}
 
     {{#if this.schema}}
-        <p><strong>Schema</strong>:</p>
-        <pre><code>{{this.schema}}</code></pre>
+        <p><strong>Schema</strong>:<span class="glyphicon glyphicon-collapse-down schema-toggle"></span></p>
+        <div class="schema">
+            <pre><code>{{this.schema}}</code></pre>
+        </div>
     {{/if}}
 
     {{#if this.example}}
